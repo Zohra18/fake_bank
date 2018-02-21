@@ -1,0 +1,324 @@
+/*CSS general*/
+body, html{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  }
+
+  /*.parallax {
+       /*The image used
+      background-image: url("img/nav1.png");
+
+      /* Full height
+      height: 100%;
+
+      /* Create the parallax scrolling effect
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+
+  } */
+
+  /*font*/
+  @font-face { font-family: FAM; src: url('font/FrontPageNeue.otf'); }
+@font-face { font-family: FAM; font-weight: bold; src: url('font/FrontPageNeue.otf');}
+
+@font-face { font-family: CC; src: url('font/Nuernberg Messe.otf'); }
+@font-face { font-family: CC; font-weight: bold; src: url('font/Nuernberg Messe.otf');}
+
+
+/*banner + nav*/
+#header .bgnav{
+  background-image: url("img/nav1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  background-color: black; opacity: 0.7; filter: alpha(opacity=70);
+  font-size: 28px;
+  overflow: hidden;
+  position: fixed;
+  padding-top: 15px;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  opacity: 80%;
+  font-family: FAM;
+  z-index: 2;
+}
+.container a {
+  text-decoration: none;
+  color:white;
+  justify-content: center;
+}
+.container > .newclient{
+  margin-left: auto;
+  margin-right: 4%;
+}
+.container > .client{
+  margin-right: 4%;
+}
+.container > .newclient a{
+  color:#ef6221;
+}
+.container > .cartes, .Particuliers, .etudiants, .pro{
+  margin-left: 4%;
+}
+
+.intro{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 10%;
+    background-color: transparent;
+    font-family: FAM;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.intro2{
+  font-size: 40px;
+  position: absolute;
+  left: 8%;
+  margin-top: 2%
+}
+
+/*hover effect*/
+#cell2 a:hover{
+  color: #ce2508;
+  background-color: #2b2b2b;
+}
+
+.container a:hover {
+  border-bottom: 2px solid #ef6221;
+  color: #ef6221;
+  height: 40px;
+}
+.container .newclient a:hover{
+  color: #ce2508;
+  border-bottom: 2px solid #ce2508;
+}
+#cell1 a:hover{
+  color: #ef6221;
+  background-color: black;
+}
+/*.container > div {
+  flex: 1;
+  flex-grow, flex-shrink, flex-basis
+}*/
+
+/*body*/
+
+/*cell1 */
+#cell1 a{
+  text-decoration: none;
+  position: absolute;
+  color: white;
+  font-family: FAM;
+  font-size: 30px;
+  background-color: #474240;
+  width: 20%;
+  height: 7%;
+  padding-top: 1%;
+  box-shadow: 2px 2px 2px black;
+}
+#cell1{
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#offre1, #offre2, #offre3{
+  width: 30%;
+  text-align: center;
+  justify-content: space-between;
+  font-family: CC;
+  background-color: #d8a388;
+  padding: 2%;
+  font-size: 30px;
+}
+#offre1, #offre2{
+  border-right: 2px solid white;
+}
+
+.newclientS{
+  font-family: FAM;
+  font-size: 30px;
+  right: 40%;
+  margin-top: 4%;
+}
+
+/*cell2 promo*/
+#cell2{
+  background: url("img/buildings.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 550px;
+  font-family: FAM;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  padding-top: 3%;
+  width: 100%;
+  font-size: 40px;
+}
+.pro1{
+  position: absolute;
+  left: 10%;
+
+}
+.ou{
+  position: absolute;
+  left: 17%;
+  color: #ef6221;
+}
+.pro2{
+  position: absolute;
+  left: 17%;
+  margin-top: 10%;
+}
+.pret{
+  position: absolute;
+  margin-top: 15%;
+  left: 20%;
+  font-size: 40px;
+}
+.numb{
+  font-size: 100px;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #ef6221;
+}
+
+.arnak{
+  position: absolute;
+  left: 70%;
+  margin-top: 35%;
+  font-size: 18px;
+}
+#cell2 a{
+  color: #ef6221;
+  text-decoration: none;
+  position: absolute;
+  font-family: FAM;
+  font-size: 36px;
+  background-color: #474240;
+  text-align: center;
+  width: 23%;
+  height: 8%;
+  padding-top: 0.7%;
+  left: 33%;
+  margin-top: 27%;
+  box-shadow: 2px 2px 2px black;
+}
+
+/*cell3*/
+
+#cell3{
+  background-image: url("img/phone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  color: #ef6221;
+  font-family: CC;
+  font-size: 40px;
+  width: 100%;
+  text-shadow: 2px 2px 4px #000;
+}
+.app {
+  position: absolute;
+  left: 5%;
+  margin-top: 10%;
+}
+.app2{
+  position: absolute;
+  left: 6%;
+  margin-top: 3%;
+}
+.apple{
+  position: absolute;
+  margin-top: 40%;
+  left: 16%;
+}
+.gogole{
+  position: absolute;
+  left: 26%;
+  margin-top: 40%;
+}
+.micro{
+  position: absolute;
+  left: 36%;
+  margin-top: 40%;
+}
+.parapp{
+  width: 100%;
+  color: #ddd;
+  text-shadow: 2px 2px 4px #000;
+  font-family: CC;
+  font-size: 30px;
+  position: absolute;
+}
+.parapp1{
+  position: absolute;
+  margin-top: 25%;
+  left: 11%;
+}
+.parapp2{
+  position: absolute;
+  margin-top: 27%;
+  left: 12%
+}
+
+/*whitespace
+.ws{
+  background-color: #d8a388;
+  height: 200px;
+  width: 100%;
+}*/
+/*footer*/
+#info a{
+  font-family: FAM;
+  text-decoration: none;
+  color: white;
+  background-size: 100px 100%;
+  z-index: 2;
+}
+#info{
+  height: 100px;
+  background-color: black; opacity: 0.9; filter: alpha(opacity=90);
+  width: auto;
+  z-index: 2;
+  display: flex;
+
+}
+#info > .faq, .legale, .plan, .regle, .recla, .contact{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+#info .faq{
+    margin-left: 17%;
+}
+
+
+footer{
+  height: 100px;
+  background-image: url("img/wood.jpg");
+  width: auto;
+  z-index: 1;
+}
